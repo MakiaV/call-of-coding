@@ -1,45 +1,56 @@
 import React from "react";
 import styles from "./PrestigeRank.module.css";
 import Image from "next/image";
-import rankStars from "../../../public/images/stars.webp";
-import level from "../../../public/images/level.png";
 import { IoIosArrowUp } from "react-icons/io";
 
-const PrestigeRank = () => {
+const PrestigeRank = ({ recentDayData }) => {
 	return (
 		<div className={styles.container}>
 			<div className={styles.rankStars}>
-				<Image src={rankStars} alt="stars" width={80} />
+				<Image
+					src={recentDayData.topLogo}
+					alt="stars"
+					width={70}
+					height={60}
+				/>
 			</div>
 			<div className={styles.prestigeData}>
 				<div className={styles.prestigeDataLeft}>
-					<Image src={level} alt="level" width={45} />
+					<Image
+						src={recentDayData.levelLogo}
+						alt="level"
+						width={45}
+						height={45}
+					/>
 					<div className={styles.gamerRank}>
-						<p>LEVEL 50</p>
-						<span>COMMANDER</span>
+						<span>{recentDayData.level}</span>
+						<span>{recentDayData.grade}</span>
 					</div>
 				</div>
 				<div className={styles.prestigeDataRight}>
 					<div className={styles.gamerRank}>
-						<p>PRESTIGE 1</p>
-						<span>PRIVATE 1</span>
+						<span>{recentDayData.nextLevel}</span>
+						<span>{recentDayData.nextLevel2}</span>
 					</div>
-					<IoIosArrowUp size={40} color="#31372B" />
+					<IoIosArrowUp size={40} color="rgba(196, 192, 192, 0.5)" />
 				</div>
 			</div>
 			<div className={styles.xpWrapper}>
 				<div className={styles.xpBarContainer}>
 					<div className={styles.xpBar}></div>
-					<div className={styles.xpBarProgress}></div>
+					<div
+						className={styles.xpBarProgress}
+						style={{ width: `${recentDayData.nextLevelProcent}` }}
+					></div>
 				</div>
 				<div className={styles.xpData}>
-					<div className={styles.xpDataLeft}>
+					<div className={styles.xpDataItem}>
 						<span>CURRENT XP:</span>
-						<span>1.455.678</span>
+						<span>{recentDayData.currentXp}</span>
 					</div>
-					<div className={styles.xpDataRight}>
+					<div className={styles.xpDataItem}>
 						<span>XP NEEDED:</span>
-						<span>17.231</span>
+						<span>{recentDayData.neededXp}</span>
 					</div>
 				</div>
 			</div>

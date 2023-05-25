@@ -1,14 +1,13 @@
 import React from "react";
 import RecentDay from "../recentDay/RecentDay";
 import PrestigeRank from "../prestigeRank/PrestigeRank";
-import { MdKeyboardArrowDown, MdOutlineMessage } from "react-icons/md";
-import Image from "next/image";
+import { MdKeyboardArrowDown } from "react-icons/md";
 import LineChartComponent from "../lineChart/LineChartComponent";
 import DoughnutChart from "../doughnutChart/DoughnutChart";
 import styles from "./CoreDashboard.module.css";
-import { friends } from "@/data";
 import FriendsList from "../friendsList/FriendsList";
 import RecentMach from "../recentMatch/RecentMach";
+import { coreRecentDay, coreRecentMatch, coreSummary } from "@/data";
 
 const CoreDashboard = () => {
 	return (
@@ -19,10 +18,10 @@ const CoreDashboard = () => {
 			aria-labelledby="pills-core-tab"
 			tabIndex="0"
 		>
-			<RecentMach />
+			<RecentMach matchData={coreRecentMatch} />
 			<div className={styles.prestigeContainer}>
-				<PrestigeRank />
-				<RecentDay />
+				<PrestigeRank recentDayData={coreRecentDay} />
+				<RecentDay recentDayData={coreRecentDay} />
 			</div>
 			<div className={styles.summaryContainer}>
 				<div className={styles.summary}>
@@ -36,10 +35,10 @@ const CoreDashboard = () => {
 					</div>
 					<div className={styles.summaryCharts}>
 						<div className={styles.doughnutChart}>
-							<DoughnutChart />
+							<DoughnutChart summaryData={coreSummary} />
 						</div>
 						<div className={styles.lineChart}>
-							<LineChartComponent />
+							<LineChartComponent summaryData={coreSummary} />
 						</div>
 					</div>
 				</div>

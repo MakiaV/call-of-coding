@@ -2,15 +2,16 @@ import React from "react";
 import styles from "./RecentMatch.module.css";
 import Image from "next/image";
 import avatar from "../../../public/images/avatar.jpeg";
-import ak47 from "../../../public/images/ak47.png";
 
-const RecentMach = () => {
+const RecentMach = ({ matchData }) => {
 	return (
 		<div className={styles.container}>
 			<div className={styles.rmLeft}>
 				<div className={styles.gameMode}>
-					<p>Recent match</p>
-					<p>Domination</p>
+					<span>Recent match:</span>
+					<span className={styles.gameModeTitle}>
+						{matchData.gameMode}
+					</span>
 				</div>
 				<div className={styles.matchDataWrapper}>
 					<div className={styles.gamerData}>
@@ -23,32 +24,46 @@ const RecentMach = () => {
 						/>
 						<div className={styles.nameStatus}>
 							<span>MakiaV</span>
-							<span>Win</span>
+							<span
+								style={
+									matchData.status === "Win"
+										? {
+												color: "rgba(143, 253, 115, 0.5)",
+												fontWeight: "800",
+										  }
+										: {
+												color: "rgba(255, 99, 132, 0.5)",
+												fontWeight: "800",
+										  }
+								}
+							>
+								{matchData.status}
+							</span>
 						</div>
 					</div>
 					<div className={styles.matchData}>
 						<div className={styles.matchDataItem}>
-							<span>18</span>
+							<span>{matchData.kills}</span>
 							<span>Kills</span>
 						</div>
 						<div className={styles.matchDataItem}>
-							<span>5</span>
+							<span>{matchData.deaths}</span>
 							<span>Deaths</span>
 						</div>
 						<div className={styles.matchDataItem}>
-							<span>3</span>
+							<span>{matchData.headshots}</span>
 							<span>Headshots</span>
 						</div>
 						<div className={styles.matchDataItem}>
-							<span>4</span>
+							<span>{matchData.assits}</span>
 							<span>Assits</span>
 						</div>
 						<div className={styles.matchDataItem}>
-							<span>6,239</span>
+							<span>{matchData.xp}</span>
 							<span>Xp earned</span>
 						</div>
 						<div className={styles.matchDataItem}>
-							<span>10</span>
+							<span>{matchData.time}</span>
 							<span>Time played</span>
 						</div>
 					</div>
@@ -56,7 +71,13 @@ const RecentMach = () => {
 			</div>
 			<div className={styles.rmRight}>
 				<p>Main weapon</p>
-				<Image src={ak47} alt="ak47" width={200} />
+				<Image
+					className={styles.weaponImg}
+					src={matchData.weapon}
+					alt="weapon"
+					width={200}
+					height={80}
+				/>
 			</div>
 		</div>
 	);

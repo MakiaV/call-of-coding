@@ -20,54 +20,7 @@ const Navbar = () => {
 				/>
 				<BiSearch color="#fff" className={styles.searchIcon} />
 			</div>
-			<div
-				className="nav nav-pills teamNav"
-				id="pills-tab"
-				role="tablist"
-			>
-				<div className="nav-item" role="presentation">
-					<div
-						className="active"
-						id="pills-core-tab"
-						data-bs-toggle="pill"
-						data-bs-target="#pills-core"
-						type="button"
-						role="tab"
-						aria-controls="pills-core"
-						aria-selected="true"
-					>
-						<div className={styles.core}>CORE</div>
-					</div>
-				</div>
-				<div className="nav-item" role="presentation">
-					<div
-						className="teamMember"
-						id="pills-hardcore-tab"
-						data-bs-toggle="pill"
-						data-bs-target="#pills-hardcore"
-						type="button"
-						role="tab"
-						aria-controls="pills-hardcore"
-						aria-selected="false"
-					>
-						<div className={styles.hardcore}>HARDCORE</div>
-					</div>
-				</div>
-				<div className="nav-item" role="presentation">
-					<div
-						className="teamMember"
-						id="pills-league-tab"
-						data-bs-toggle="pill"
-						data-bs-target="#pills-league"
-						type="button"
-						role="tab"
-						aria-controls="pills-league"
-						aria-selected="false"
-					>
-						<div className={styles.league}>LEAGUE</div>
-					</div>
-				</div>
-			</div>
+
 			<div className={styles.gotoZombie}>
 				<Link href="/" className={styles.zombieModeLink}>
 					<Image

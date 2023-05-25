@@ -7,7 +7,7 @@ import { friends } from "@/data";
 const FriendsList = () => {
 	return (
 		<div className={styles.friendList}>
-			<span>FRIEND LIST</span>
+			<span className={styles.title}>FRIEND LIST</span>
 			<div className={styles.friendContainer}>
 				{friends.map((friend) => (
 					<div key={friend.id} className={styles.friend}>

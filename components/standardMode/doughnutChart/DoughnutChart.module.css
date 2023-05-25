@@ -1,20 +1,20 @@
 .container {
-	position: relative;
-	/* width: 30%; */
 	/* flex: 0.2; */
-	width: 150px;
-	height: 150px;
+	height: 180px;
+	width: 180px;
+}
+.doughnutData {
+	position: relative;
 }
 .winRatio {
-	width: 80px;
-	height: 80px;
-	border-radius: 50%;
-	border: 1px solid skyblue;
 	position: absolute;
-	top: 52%;
+	width: 60%;
+	height: 60%;
+	border-radius: 50%;
+	top: 53%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	font-size: 12px;
+	background-color: rgba(143, 253, 115, 0.2);
 	font-weight: 800;
 	display: flex;
 	flex-direction: column;
@@ -33,23 +33,28 @@
 	justify-content: center;
 	align-items: center;
 }
+
 .winData,
 .loseData {
 	display: flex;
+	justify-content: center;
 	align-items: center;
 	gap: 5px;
+	font-size: 13px;
 }
 .winDot {
 	width: 10px;
 	height: 10px;
 	border-radius: 50%;
 	background-color: rgba(143, 253, 115, 0.5);
-	color: #ff6384;
 }
 .loseDot {
 	width: 10px;
 	height: 10px;
 	border-radius: 50%;
 	background-color: rgba(255, 99, 132, 0.5);
-	color: #8ffd73;
+}
+.result {
+	color: rgb(196, 192, 192);
+	font-size: 13px;
 }

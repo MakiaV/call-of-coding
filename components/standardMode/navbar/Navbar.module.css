@@ -52,9 +52,11 @@
 .core,
 .hardcore,
 .league {
-	border: 1px solid #fff;
+	border: 1px solid rgb(5, 27, 29);
 	padding: 5px 20px;
 	cursor: pointer;
+	font-weight: 800;
+	/* color: #000; */
 }
 .core {
 	/* background-color: #fff;
@@ -77,7 +79,7 @@
 .zombieMode {
 	padding: 5px 80px 5px 20px;
 	border-radius: 10px;
-	background-color: rgb(127, 6, 7, 0.4);
+	background-color: rgba(255, 99, 132, 0.5);
 }
 .zombieModeImg {
 	position: absolute;

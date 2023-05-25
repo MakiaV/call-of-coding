@@ -4,7 +4,7 @@ import styles from "./LeagueDashboard.module.css";
 const LeagueDashboard = () => {
 	return (
 		<div
-			className="tab-pane fade teamDescription"
+			className="tab-pane fade"
 			id="pills-league"
 			role="tabpanel"
 			aria-labelledby="pills-league-tab"

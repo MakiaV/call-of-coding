@@ -1,25 +1,25 @@
 import React from "react";
 import styles from "./RecentDay.module.css";
 
-const RecentDay = () => {
+const RecentDay = ({ recentDayData }) => {
 	return (
 		<div className={styles.container}>
-			<p>Today</p>
+			<p>TODAY</p>
 			<div className={styles.todayData}>
 				<div className={styles.todayDataItem}>
-					<p>258</p>
+					<span>{recentDayData.kills}</span>
 					<span>Kills</span>
 				</div>
 				<div className={styles.todayDataItem}>
-					<p>1.72</p>
+					<span>{recentDayData.ratio}</span>
 					<span>Kill/Death</span>
 				</div>
 				<div className={styles.todayDataItem}>
-					<p>5h 28m</p>
+					<span>{recentDayData.time}</span>
 					<span>Game Time</span>
 				</div>
 				<div className={styles.todayDataItem}>
-					<p>73%</p>
+					<span>{recentDayData.win}</span>
 					<span>win</span>
 				</div>
 			</div>

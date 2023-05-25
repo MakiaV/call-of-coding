@@ -30,7 +30,7 @@ const Sidebar = () => {
 				</p>
 				<p
 					className={styles.sidebarItem}
-					style={{ backgroundColor: "#041516" }}
+					style={{ backgroundColor: "rgba(4, 21, 22, .5)" }}
 				>
 					<MdDashboard color="#fff" size={30} />
 					<span>Dashboard</span>

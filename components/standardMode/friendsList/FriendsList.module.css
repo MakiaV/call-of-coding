@@ -1,7 +1,16 @@
 .friendList {
 	flex: 0.2;
 }
+.title {
+	font-size: 13px;
+}
 .friendContainer {
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	padding: 10px;
+	border-radius: 10px;
+	background: rgba(10, 67, 70, 0.5);
+
 	margin-top: 20px;
 }
 .friend {

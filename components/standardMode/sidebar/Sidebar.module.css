@@ -38,7 +38,7 @@
 	z-index: 99;
 }
 .sidebarItem:hover {
-	background-color: #093437;
+	background-color: rgba(9, 52, 55, 0.5);
 }
 .bullet {
 	width: 100%;

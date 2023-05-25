@@ -19,11 +19,7 @@ const Navbar = () => {
 				/>
 				<BiSearch color="#fff" className={styles.searchIcon} />
 			</div>
-			<div
-				className="nav nav-pills teamNav"
-				id="pills-tab"
-				role="tablist"
-			>
+			<div className="nav nav-pills" id="pills-tab" role="tablist">
 				<div className="nav-item" role="presentation">
 					<div
 						className="active"
@@ -40,7 +36,6 @@ const Navbar = () => {
 				</div>
 				<div className="nav-item" role="presentation">
 					<div
-						className="teamMember"
 						id="pills-hardcore-tab"
 						data-bs-toggle="pill"
 						data-bs-target="#pills-hardcore"
@@ -54,7 +49,6 @@ const Navbar = () => {
 				</div>
 				<div className="nav-item" role="presentation">
 					<div
-						className="teamMember"
 						id="pills-league-tab"
 						data-bs-toggle="pill"
 						data-bs-target="#pills-league"
