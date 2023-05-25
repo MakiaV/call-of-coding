@@ -1,0 +1,55 @@
+.container {
+	position: relative;
+	/* width: 30%; */
+	/* flex: 0.2; */
+	width: 150px;
+	height: 150px;
+}
+.winRatio {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	border: 1px solid skyblue;
+	position: absolute;
+	top: 52%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 12px;
+	font-weight: 800;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.winsLoses {
+	display: flex;
+	justify-content: space-around;
+	/* gap: 20px; */
+}
+.wins,
+.loses {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.winData,
+.loseData {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+.winDot {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: rgba(143, 253, 115, 0.5);
+	color: #ff6384;
+}
+.loseDot {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: rgba(255, 99, 132, 0.5);
+	color: #8ffd73;
+}

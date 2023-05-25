@@ -1,0 +1,36 @@
+.friendList {
+	flex: 0.2;
+}
+.friendContainer {
+	margin-top: 20px;
+}
+.friend {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 5px;
+}
+.friendData {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+.friendDataOnOff {
+	position: relative;
+}
+.avatarImg {
+	border-radius: 50%;
+}
+.friendMsg {
+	cursor: pointer;
+}
+
+.avatarOn {
+	width: 12px;
+	height: 12px;
+	background-color: rgb(143, 253, 115);
+	border-radius: 50%;
+	position: absolute;
+	bottom: 8px;
+	right: 0;
+}

@@ -1,0 +1,41 @@
+.summaryContainer {
+	color: #fff;
+	display: flex;
+	gap: 30px;
+}
+.summary {
+	flex: 0.8;
+	/* display: flex; */
+}
+.summaryNav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.gameDate {
+	display: flex;
+	align-items: center;
+
+	padding: 5px 20px;
+	border-radius: 10px;
+	background-color: #fff;
+	color: #000;
+}
+.summaryCharts {
+	border: 1px solid skyblue;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	/* height: 200px; */
+}
+.doughnutChart {
+	flex: 0.2;
+}
+.lineChart {
+	flex: 0.8;
+	/* width: 100%; */
+}
+.prestigeContainer {
+	display: flex;
+}

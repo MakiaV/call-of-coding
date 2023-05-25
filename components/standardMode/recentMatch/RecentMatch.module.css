@@ -1,0 +1,46 @@
+.container {
+	color: #fff;
+	display: flex;
+	border: 1px solid green;
+}
+.rmLeft {
+	flex: 0.8;
+	/* display: flex; */
+}
+.gameMode {
+	display: flex;
+}
+.matchDataWrapper {
+	display: flex;
+	/* justify-content: space-around; */
+	gap: 5px;
+}
+.gamerData {
+	display: flex;
+	flex: 0.2;
+}
+.gamerDataImg {
+	border-radius: 50%;
+}
+.nameStatus {
+	display: flex;
+	flex-direction: column;
+}
+.matchData {
+	display: flex;
+	flex: 0.8;
+	justify-content: space-around;
+}
+.matchDataItem {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	align-items: center;
+}
+.rmRight {
+	flex: 0.2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}

@@ -1,0 +1,40 @@
+.container {
+	height: 100vh;
+	background-image: url("../../assets/images/zombie.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.main {
+	width: 80%;
+	height: 80%;
+	display: flex;
+	background: rgba(10, 67, 70, 0.25);
+	box-shadow: 0 8px 32px 0 rgba(24, 60, 21, 0.37);
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.zombiesImg {
+	position: absolute;
+	bottom: -220px;
+	left: 50px;
+	animation-name: zombiesAttack;
+	animation-duration: 3s;
+	animation-delay: 3s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes zombiesAttack {
+	from {
+		bottom: -220px;
+	}
+	to {
+		bottom: 0;
+	}
+}

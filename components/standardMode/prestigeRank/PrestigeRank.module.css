@@ -1,0 +1,40 @@
+.container {
+	/* border: 1px solid greenyellow; */
+	flex: 0.4;
+}
+.rankStars {
+	display: flex;
+	justify-content: center;
+}
+.prestigeData {
+	display: flex;
+	justify-content: space-between;
+}
+.prestigeDataLeft,
+.prestigeDataRight {
+	display: flex;
+	color: #fff;
+	align-items: center;
+}
+.xpBarContainer {
+	position: relative;
+}
+.xpBar {
+	position: absolute;
+	width: 100%;
+	height: 5px;
+	background-color: gray;
+}
+.xpBarProgress {
+	position: absolute;
+
+	width: 70%;
+	height: 5px;
+	background-color: skyblue;
+	z-index: 9;
+}
+.xpData {
+	display: flex;
+	justify-content: space-between;
+	color: #fff;
+}
