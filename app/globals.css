@@ -1,16 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,800;1,200&display=swap");
+
 * {
 	margin: 0;
+	font-family: "Poppins", sans-serif;
 }
 .nav-item .active {
 	background: rgba(255, 255, 255, 0.3);
 	color: rgba(5, 28, 30, 1);
 }
-/* #pills-core,
-#pills-hardcore {
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-} */
+
 #pills-core-tab {
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;

@@ -184,3 +184,65 @@ export const hardcoreRecentDay = {
 	time: "3h 15m",
 	win: "45%",
 };
+
+export const leagueSchedule = [
+	{
+		id: 1,
+		name: "LEAGUE I",
+		onlineQualiDate: "14-20 JUN",
+		tournamentDate: "25-30 JUN",
+		tournamentLogo: "/images/league-pack-logo.webp",
+	},
+	{
+		id: 2,
+		name: "LEAGUE II",
+		onlineQualiDate: "4-10 SEP",
+		tournamentDate: "18-23 SEP",
+		tournamentLogo: "/images/major.png",
+	},
+	{
+		id: 3,
+		name: "LEAGUE III",
+		onlineQualiDate: "8-14 DEC",
+		tournamentDate: "17-20 DEC",
+		tournamentLogo: "/images/warzone.png",
+	},
+];
+
+export const teamPopularity = [
+	{
+		id: 1,
+		name: "Paris Killer",
+		popularity: 234,
+	},
+	{
+		id: 2,
+		name: "Yaounde Mbole",
+		popularity: 120,
+	},
+	{
+		id: 3,
+		name: "Tokyo Chu",
+		popularity: 84,
+	},
+	{
+		id: 4,
+		name: "Berlin Himmel",
+		popularity: 75,
+	},
+	{
+		id: 5,
+		name: "Abidjan Atieke",
+		popularity: 73,
+	},
+	{
+		id: 6,
+		name: "Dallas Poker",
+		popularity: 56,
+	},
+	{
+		id: 7,
+		name: "Berne Empire",
+		popularity: 32,
+	},
+];

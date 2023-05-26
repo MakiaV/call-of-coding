@@ -19,11 +19,25 @@ const LineChartComponent = ({ summaryData }) => {
 			},
 		],
 	});
+	const [options, setOptions] = useState({
+		scales: {
+			x: {
+				ticks: {
+					color: "#fff",
+				},
+			},
+			y: {
+				ticks: {
+					color: "#fff",
+				},
+			},
+		},
+	});
 	ChartJS.register(ArcElement, Tooltip, Legend);
 
 	return (
 		<div className={styles.container}>
-			<Line data={lineData} />
+			<Line data={lineData} options={options} />
 		</div>
 	);
 };

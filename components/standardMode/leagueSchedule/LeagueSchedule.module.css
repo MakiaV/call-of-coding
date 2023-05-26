@@ -1,0 +1,33 @@
+.container {
+	color: #fff;
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	padding: 10px;
+	border-radius: 10px;
+	background: rgba(10, 67, 70, 0.5);
+}
+.title {
+	text-align: center;
+	font-weight: 800;
+	font-size: 20px;
+	border-radius: 10px;
+
+	border: 1px solid yellowgreen;
+}
+.onlineQuali {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	border-bottom: 1px solid gray;
+	margin-top: 5px;
+}
+.onlineQuali span:nth-child(2) {
+	font-size: 13px;
+	color: rgb(196, 192, 192);
+}
+.tournament {
+	display: flex;
+	gap: 30px;
+	align-items: center;
+	margin-top: 10px;
+}
