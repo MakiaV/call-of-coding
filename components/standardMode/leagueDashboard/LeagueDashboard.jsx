@@ -39,7 +39,7 @@ const LeagueDashboard = () => {
 						<video
 							width="420"
 							height="340"
-							autoplay
+							autoplay="autoplay"
 							muted
 							loop
 							controls

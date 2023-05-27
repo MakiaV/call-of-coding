@@ -17,3 +17,9 @@
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
+table {
+	table-layout: fixed;
+}
+td {
+	width: 100%;
+}

@@ -246,3 +246,19 @@ export const teamPopularity = [
 		popularity: 32,
 	},
 ];
+export const zombieCombatRecord = {
+	level: 367,
+	kills: 229056,
+	gamePlayed: 567,
+	scenesSurvived: 8734,
+	headshots: 104693,
+	scorePerMinute: 1085,
+	highestScene: 42,
+	revives: 432,
+	avgGameScore: 34876,
+	avgScenesGame: 8,
+	downs: 8900,
+	perksUsed: 7345,
+	doorsOpened: 2765,
+	timePlayed: "358h 17m 45s",
+};
