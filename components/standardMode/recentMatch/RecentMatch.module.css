@@ -74,6 +74,23 @@
 	border-radius: 10px;
 	background: rgba(10, 67, 70, 0.5);
 }
-/* .weaponImg {
-	width: 200px;
-} */
+@media screen and (max-width: 1000px) {
+	.container {
+		display: block;
+	}
+	.rmLeft {
+		display: block;
+		width: 100%;
+	}
+	.rmRight {
+		display: block;
+		width: 250px;
+		margin: 5px auto;
+	}
+	.rmRight p {
+		text-align: center;
+	}
+	.matchDataWrapper {
+		display: block;
+	}
+}

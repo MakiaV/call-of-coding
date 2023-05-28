@@ -51,3 +51,8 @@
 	object-fit: cover;
 	margin-top: -100px;
 }
+@media screen and (max-width: 1330px) {
+	.container {
+		display: none;
+	}
+}

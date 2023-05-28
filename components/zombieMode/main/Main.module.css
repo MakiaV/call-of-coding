@@ -67,3 +67,13 @@
 	background-color: rgba(186, 35, 68, 0.5);
 	z-index: 9;
 }
+@media screen and (max-width: 1000px) {
+	.weaponDogWrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+	}
+	.weaponWrapper {
+		display: block;
+	}
+}

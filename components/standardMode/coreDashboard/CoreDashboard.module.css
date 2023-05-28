@@ -50,3 +50,21 @@
 	display: 1px solid yellow;
 	flex: 0.6;
 }
+@media screen and (max-width: 1000px) {
+	.summaryContainer {
+		display: block;
+	}
+	.summaryCharts {
+		display: block;
+	}
+}
+@media screen and (max-width: 1330px) {
+	.summaryContainer {
+		display: block;
+	}
+	.summaryCharts {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+}

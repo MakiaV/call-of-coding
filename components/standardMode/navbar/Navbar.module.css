@@ -86,3 +86,11 @@
 	bottom: 0;
 	right: 0;
 }
+@media screen and (max-width: 1330px) {
+	.container {
+		font-size: 5px;
+	}
+	.inputContainer {
+		display: none;
+	}
+}

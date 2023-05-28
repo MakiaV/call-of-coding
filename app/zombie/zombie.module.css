@@ -29,6 +29,31 @@
 	animation-timing-function: linear;
 	animation-fill-mode: forwards;
 }
+@media screen and (max-width: 1330px) {
+	.container {
+		display: block;
+		height: auto;
+	}
+	.main {
+		display: block;
+		width: 100%;
+		height: 100vh;
+	}
+	.zombiesImg {
+		display: none;
+	}
+}
+@media screen and (max-width: 1000px) {
+	.container {
+		display: block;
+		height: auto;
+	}
+	.main {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+}
 
 @keyframes zombiesAttack {
 	from {
