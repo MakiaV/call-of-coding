@@ -11,14 +11,6 @@ import Link from "next/link";
 const Navbar = () => {
 	return (
 		<div className={styles.container}>
-			<div className={styles.inputContainer}>
-				<input
-					type="text"
-					className={styles.myInput}
-					placeholder="Search for player"
-				/>
-				<BiSearch color="#fff" className={styles.searchIcon} />
-			</div>
 			<div className="nav nav-pills" id="pills-tab" role="tablist">
 				<div className="nav-item" role="presentation">
 					<div

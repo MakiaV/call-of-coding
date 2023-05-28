@@ -53,7 +53,8 @@ const Sidebar = () => {
 					className={styles.bullet}
 					src={bullet}
 					alt="bullet"
-					// width={260}
+					width={270}
+					height={270}
 				/>
 			)}
 		</div>

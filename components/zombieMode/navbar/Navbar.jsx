@@ -12,15 +12,6 @@ import Link from "next/link";
 const Navbar = () => {
 	return (
 		<div className={styles.container}>
-			<div className={styles.inputContainer}>
-				<input
-					type="text"
-					className={styles.myInput}
-					placeholder="Search for player"
-				/>
-				<BiSearch color="#fff" className={styles.searchIcon} />
-			</div>
-
 			<div className={styles.gotoZombie}>
 				<Link href="/" className={styles.zombieModeLink}>
 					<Image

@@ -41,11 +41,9 @@
 	background-color: rgba(9, 52, 55, 0.5);
 }
 .bullet {
-	width: 100%;
-	object-fit: cover;
 	margin-top: -100px;
 }
-@media screen and (max-width: 1330px) {
+@media screen and (max-width: 1400px) {
 	.container {
 		display: none;
 	}

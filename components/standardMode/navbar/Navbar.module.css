@@ -5,8 +5,6 @@
 	color: #fff;
 }
 .inputContainer {
-	/* display: flex;
-	align-items: center; */
 	position: relative;
 }
 .myInput::placeholder {
@@ -86,11 +84,12 @@
 	bottom: 0;
 	right: 0;
 }
-@media screen and (max-width: 1330px) {
+@media screen and (max-width: 1000px) {
 	.container {
-		font-size: 5px;
+		font-size: 12px;
+		padding-top: 40px;
 	}
-	.inputContainer {
+	.player {
 		display: none;
 	}
 }
